@@ -87,13 +87,17 @@ border: 1px solid #EEEEEE;
 }
 
 .mrg-but{
+    
     justify-content: center;
-margin-top: 94px;
-margin-bottom: 34px;
-margin-left: auto;
-margin-right: auto;
-flex-basis: calc((100%-32px)/5);
-
+    padding-top: 94px;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: calc((100% - 32px)/5);
+    column-gap: 8px;
+    display: flex;
+    
+    flex-wrap: wrap;
 }
 .logo{
 
@@ -118,6 +122,20 @@ color: var(--main-light-color);
     margin-right: 93px;
 }
 
+.page-logo-footer{font-family: Raleway;
+    width: 145px;
+    height: 31px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.36;
+    text-decoration: none;
+    margin-bottom: 20px;}
+
+.footer-distance{
+    margin-bottom: 10px;
+}
+
 .menu-list{
     column-gap: 50px;
 }
@@ -139,15 +157,13 @@ letter-spacing: 0.02em;
 
 .main-section{background-color: 
     var(--border-bg-color);
-        width: 1600;
-        height: 600px;
-        left: 0px;
-        top: 80px;
+        padding-top: 200px;
+        padding-bottom: 200px;
 
 }
 
 .distance{
-flex-basis: calc((100%-90px)/4);
+flex-basis: calc((100% - 90px)/4);
 
 }
 
@@ -156,6 +172,8 @@ background-color: var(--border-bg-color);
 height: auto;
 display: flex;
 flex-direction: column;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 
@@ -229,6 +247,7 @@ padding-bottom: 47px;
 {color: var(--accent-color);}
 
 .type-about{
+    margin-bottom: 10px;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -251,6 +270,7 @@ color: var(--section-team-bg-color);}
 
 .details{display: flex;
 flex-wrap: wrap;
+gap: 30px;
 }
 
 .our-specific{
@@ -260,20 +280,20 @@ flex-wrap: wrap;
 }
 
 .distance-photo{
-flex-basis: ((100%-60px)/3);
+flex-basis: ((100% - 60px)/3);
 
 }
 
 .main-title{
-font-style: normal;
+width: 700px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 /* or 136% */
 margin-left: auto;
 margin-right: auto;
-padding-top: 200px;
-padding-bottom: 30px;
+
+margin-bottom: 30px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -295,11 +315,7 @@ color: var(--main-light-color);
     margin: -1px;
 }
 
-    .photo-description{
-        width: 370px;
-        height: 294px;
-        left: 215px;
-        top: 1058px;;}
+
     .photo-back{background-color: var(--main-light-color);}
 
 .second-tittle{
@@ -356,6 +372,7 @@ color: var(--secondary-front-color);
     line-height: 1.62;
     /* identical to box height, or 162% */
     text-align: center;
+    padding: 6px 22px;
 }
 .nav-button:hover,
 .nav-button:focus

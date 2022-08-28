@@ -83,7 +83,6 @@ img{display: block;}
 .box-pictures{
     box-sizing: border-box;
 background: #FFFFFF;
-border: 1px solid #EEEEEE;
 }
 
 .mrg-but{
@@ -111,7 +110,9 @@ color: var(--logo-color);
 .second-logo-footer{
 color: var(--main-light-color);
 }
-
+.footer-container-logo{
+    margin-bottom: 20px;
+}
 
 .page-logo{font-family: Raleway;
     font-style: normal;
@@ -140,8 +141,24 @@ color: var(--main-light-color);
     column-gap: 50px;
 }
 
+.portfolio-top-distance{
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.portfolio-distance{
+padding: 20px 24px;
+border-left: 1px solid #eeee;
+border-bottom: 1px solid #eeee;
+border-right: 1px solid #eeee;
+
+}
+
 .menu{
 display: flex;
+gap: 50px;
+margin-left: auto;
 }
 
 .menu-nav{
@@ -209,14 +226,13 @@ padding-bottom: 60px;
         border-radius: 4px;}
 
 .mail-link{
-    display: flex;
+
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-margin-left: auto;
-margin-right: 50px;
+
     color: var(--section-team-bg-color);}
 
     .mail-link:hover,
@@ -236,10 +252,18 @@ letter-spacing: 0.02em;
 .phone-number:focus{
     color: var(--accent-color);  
 }
+.section-about{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .section{
 padding-top: 47px;
 padding-bottom: 47px;
+}
+
+.section-specification{
+    padding-bottom: 94px;
 }
 
 .link:hover,
@@ -301,6 +325,9 @@ flex-wrap: wrap;
 color: var(--main-light-color);
 
 }
+.emp-names{
+    padding: 30px;
+}
 
 .visually-hidden{
     position: absolute;
@@ -330,6 +357,7 @@ color: var(--main-light-color);
 
 
 .employees{
+    margin-bottom: 10px;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -389,7 +417,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 /* identical to box height, or 200% */
-
+margin-bottom: 4px;
 letter-spacing: 0.06em;
 
 color: var(--secondary-front-color);}
